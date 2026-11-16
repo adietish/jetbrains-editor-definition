@@ -97,6 +97,9 @@ components:
       volumeMounts:
         - name: idea-server
           path: /idea-server
+      env:
+        - name: IDE_RPM_PACKAGE_PATH
+          value: /opt/rpms/ide-server.rpm
       memoryLimit: 256Mi
       memoryRequest: 32Mi
       cpuLimit: 500m
